@@ -1,0 +1,15 @@
+{
+    "name": "timur/notifier",
+    "type": "library",
+    "require": {
+        "monolog/monolog": "^1.24"
+    },
+
+    "authors": [
+        {
+            "name": "Timur Arslanov",
+            "email": "gmuriktim@gmail.com"
+        }
+    ],
+    "description": "notifier"
+}
