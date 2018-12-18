@@ -24,42 +24,42 @@ private $url = "https://api.telegram.org/bot<token>/sendMessage?chat_id=<id>&tex
 
     public function debug($message)
     {
-        file_get_contents($this->url."debug".$message);
+        file_get_contents($this->url.\urlencode("debug".$message));
     }
 
     public function info($message)
     {
-        file_get_contents($this->url."info".$message);
+        file_get_contents($this->url.\urlencode("info".$message));
     }
 
     public function notice($message)
     {
-        file_get_contents($this->url."notice".$message);
+        file_get_contents($this->url.\urlencode("notice".$message));
     }
 
     public function warning($message)
     {
-        file_get_contents($this->url."warning".$message);
+        file_get_contents($this->url.\urlencode("warning".$message));
     }
 
     public function error($message)
     {
-        file_get_contents($this->url."error".$message);
+        file_get_contents($this->url.\urlencode("error".$message));
     }
 
     public function critical($message)
     {
-        file_get_contents($this->url."critical".$message);
+        file_get_contents($this->url.\urlencode("critical".$message));
     }
 
     public function alert($message)
     {
-        file_get_contents($this->url."alert".$message);
+        file_get_contents($this->url.\urlencode("alert".$message));
     }
 
     public function emergency($message)
     {
-        file_get_contents($this->url."emergency".$message);
+        file_get_contents($this->url.\urlencode("emergency".$message));
     }
 
 
